@@ -5,18 +5,20 @@ Koolitusfirma BCS Koolitus soovib aru saada, mis koolituste omadused mõjutavad 
 Ettevõte pakub erinevaid koolitusi (nii avalikke kui ka sisekoolitusi), mis on jaotatud kategooriatesse (nt IT, kasutajakoolitused). Koolitusi viivad läbi erinevad lektorid/koolitajad, kelle panus sisaldab lisaks aktiivsele koolitamisele ka ettevalmistusaega.
 
 ## Problem
-Koolitusfirma soovib aru saada, millised koolituste omadused (koolitaja, formaat, osalejate arv, maht, kategooria jne) mõjutavad kõige enam nende kasumlikkust. Antud projekt ühendab ettevõtte finantsandmed, koolituste metainfo ja koolitajate ajakulu, et luua terviklik pilt kasumlikkuse mõjuteguritest.
+Koolitusfirma soovib aru saada, millised koolituste omadused (koolitaja, formaat, osalejate arv, maht, kategooria jne) mõjutavad kõige enam nende kasumlikkust.
+Juhtkond soovib optimeerida ettevõtte portfelli ja ressursside kasutust. 
+
+Peamised küsimused, millele soovitakse vastust leida:
+
+1.Millised tegurid (osalejate arv, koolituste maht, kategooria, formaat, kobarkoolitus, hooajalisus) mõjutavad kõige enam koolituste müügitulu ühe AK tunni kohta? 
+Top koolitajad/koolitused?
+2.Kuidas mõjutab lektorite ajakulu (ettevalmistus ja koolitustunnid) nende keskmist AK tunnihinda, samuti kategooriate lõikes? 
+Kas see on ajas oluliselt muutunud, kellel?
 
 ## Plan
-Juhtkond soovib optimeerida ettevõtte portfelli ja ressursside kasutust. Peamised küsimused, millele soovitakse vastust leida:
 
-Millised koolituste kategooriad ja formaadid toovad kõige suurema kasumimarginaali?
 
-Kas suurem osalejate arv tagab alati suurema kasumi või kasvavad kulud proportsionaalselt?
 
-Kuidas mõjutab lektorite ajakulu (ettevalmistus vs koolitustunnid) konkreetsete projektide ja koolituste tegelikku tasuvust?
-
-Millistesse koolitustesse on mõistlik tulevikus enim investeerida?
 
 Projekti lahendamiseks kasutatakse ELT (Extract, Load, Transform) metoodikat:
 
