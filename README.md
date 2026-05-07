@@ -34,17 +34,18 @@ Töötlemise eesmärk: Andmeid töödeldakse üksnes õppe- ja analüütilisel e
 
 ### Ärisõnastik
 
-| Mõiste    | Seletus                                                                       |
-|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Müügitulu ak/h kohta    | Arvutuslik väärtus: koolituse kogukäive jagatud akadeemiliste tundide arvuga.                                                                       |
-| Lektori AK/h müügitulu  | Mõõdik, mis näitab, kui palju tulu toob üks lektori töötund (sh ettevalmistus).                                                                     |
-| Kobarkoolitus           |  Koolitustüüp, mis koosneb mitmest moodulist (väli KasKobarkoolitus -True).                                                                         |
-| Madalhooaeg             | Periood mai -august                                                                                                                                 |
-| Kõrghooaeg              | Periood september - aprill                                                                                                                          |
-| Koolitus                | Ühekordne õppesündmus või kursus, millel on konkreetne teema, toimumisaeg ja määratud lektor. Ärilises vaates on see peamine tulu genereeriv üksus. |
-| Allahindlus             | Arvutuslik vahe standardse osalustasu ja tegelikult realiseerunud müügitulu vahel.                                                                  |
-| Kobarkoolitus           | Mahukam koolitusprojekt, mis koosneb mitmest moodulist või korduvast koolitusest.                                                                   |
-|                         |                                                                                                                                                     |
+| Mõiste                  	| Selgitus                                                                                                              	|
+|-------------------------	|-----------------------------------------------------------------------------------------------------------------------	|
+| Müügitulu ak/h kohta    	| Arvutuslik väärtus: koolituse kogukäive jagatud akadeemiliste tundide arvuga.                                         	|
+| Lektori AK/h müügitulu  	| Mõõdik, mis näitab, kui palju tulu toob üks lektori töötund (sh ettevalmistus).                                       	|
+| Kobarkoolitus           	|  Koolitustüüp, mis koosneb mitmest moodulist (väli KasKobarkoolitus -True).                                           	|
+| Madalhooaeg             	| Periood mai -august                                                                                                   	|
+| Kõrghooaeg              	| Periood september - aprill                                                                                            	|
+| Koolitus                	| Õppesisu, mahu ja sihtgrupiga defineeritud toode, mida saab korduvalt erinevatele gruppidele teostada.                	|
+| Allahindlus             	| Arvutuslik vahe standardse osalustasu ja tegelikult realiseerunud müügitulu vahel.                                    	|
+| Kobarkoolitus           	| Mahukam koolitusprojekt, mis koosneb mitmest moodulist või korduvast koolitusest.                                     	|
+| Avalik koolitus         	| Kõigile soovijatele avatud koolitus, mille toimumisaeg ja sisu on eelnevalt avalikustatud                             	|
+| Sisekoolitus            	| Ettevõtte tellimusel korraldatav B2B koolitusteenuse toode, mis on kohandatud konkreetse organisatsiooni vajadustele. 	|
 
 ### Andmesõnastik
 Andmesõnastik on leitav:....
