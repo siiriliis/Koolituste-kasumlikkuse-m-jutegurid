@@ -1,34 +1,24 @@
-# BCS Koolituse müügitulu analüüs (ak/h)
-Selle projekti eesmärk on analüüsida tegureid, mis mõjutavad koolituste müügitulu ühe akadeemilise tunni (ak/h) kohta.
+# BCS Koolituse müügitulu analüüs
 
-Algne püstitus ja muudatus analüüsi fookuses:
-Algselt oli eesmärgiks analüüsida koolituste üldist kasumlikkust. Töö käigus selgus aga, et olemasolevate andmete põhjal ei ole võimalik kulusid projektide vahel täpselt jaotada (kuna üldkulud ja -tulud on koondatud projekti "AZZ" alla).
+## Ettevõtte  ja probleemi tutvustus
+Ettevõte pakub digioskuste koolitusi (nii avalikke kui ka grupikoolitusi ettevõtetele ja asutustele), mis on jaotatud sihtgrupipõhistesse kategooriatesse. Koolitusi viivad läbi nii ettevõtte enda palgal olevad koolitajad, kui ka külaliskoolitajad.
 
-Sellest tulenevalt on fookus seatud müügitulule akadeemilise tunni kohta, mis on antud andmekogumi puhul kõige täpsem mõõdik koolituste efektiivsuse hindamiseks.
+Algselt oli eesmärgiks analüüsida koolituste omadusi, mis mõjutavad kasumlikkust. Töö käigus selgus aga, et olemasolevate andmete põhjal ei ole võimalik kulusid projektide vahel täpselt jaotada (kuna üldkulud ja -tulud on koondatud kategooria "AZZ" alla). Seetõttu otsustasime analüüsida tegureid, mis mõjutavad koolituste müügitulu.
 
-## Ettevõtte tutvustus
-Ettevõte pakub erinevaid koolitusi (nii avalikke kui ka sisekoolitusi), mis on jaotatud kategooriatesse (nt IT, kasutajakoolitused). Koolitusi viivad läbi erinevad koolitajad, kelle panus sisaldab lisaks aktiivsele koolitamisele ka ettevalmistusaega.
+Leidsime, et analüüsi fookus võiks olla seatud akadeemilise tunni müügitulu uurimisele, sest eeldame, et kulu 1 AK/h ettevalmistamiseks ja läbiviimiseks on sarnane.
 
-## Probleem
-Projekti raames otsime vastuseid järgmistele küsimustele:
+## Uurimisplaan
+Analüüsi raames otsime vastuseid koolitustegevuse tulususele läbi järgmistele küsimuste:
 
-1) Müügitulu analüüs: Millised tegurid (osalejate arv, maht, kategooria, formaat, hooajalisus) omavad suurimat mõju müügitulule akadeemilise tunni kohta? Kes on edukaimad lektorid ja millised on tulusaimad koolitused?
-
-2) Lektorite tööefektiivsus: Kuidas mõjutab lektorite ajakulu (ettevalmistus vs. õppetöö) nende keskmist AK tunnihinda? Kas ja kelle puhul on see suhe ajas oluliselt muutunud?
-
-## Plan
-
-Analüüsi keskne küsimus on koolitustegevuse efektiivsus. Kuna üldkulud on koondatud ühe projekti alla ("AZZ") ja neid ei ole võimalik olemasolevate andmete põhjal üksikute koolituste vahel täpselt jaotada, kasutame peamise mõõdikuna müügitulu akadeemilise tunni (ak/h) kohta (käive kokku jagatuna koolitusmahuga).
-
-Lisaks analüüsime lektorite ajakasutust. See võimaldab meil mõõta lektori töötunni tootlikkust — kui palju tulu genereeritakse iga töötaja poolt panustatud tunni kohta. Kasutame peamise mõõdikuna Lektori ak/h müügitulu (käive kokku/lektori töö ja koolitustundide summa)
-
+1) Millised tegurid (osalejate arv, maht, kategooria, tüüp, hooajalisus jne) omavad mõju müügitulule? Võtame kasutusele mõõdikud: müügitulu AK/h kohta (müügitulu jagatuna koolitusmahuga) ja koolitaja AK/h müügitulu (müügitulu jagatuna koolitaja töö- ja koolitustundidega). Toome välja edukaimad koolitajad ja suurima müügituluga koolitused.
+2) Kuidas mõjutavad ettevõtte enda koolitajate logitud töötunnid (ettevalmistus vs. õppetöö) nende keskmist AK tunnihinda? Kas ja kelle puhul on see suhe ajas oluliselt muutunud?
 
 ## Andmekaitse kirjeldus - mis alustel andmeid töödeldakse
 Antud projektis on andmete töötlemisel lähtutud järgmistest põhimõtetest:
 
-Andmete anonümiseerimine ja pseudonümiseerimine: Kõik isikuandmed (lektorite nimed, klientide nimed jm tuvastamist võimaldav info) on andmestikust eemaldatud või asendatud unikaalsete koodidega (nt "Koolitaja 14"). See välistab füüsiliste isikute tuvastamise analüüsi käigus.
+Andmete anonümiseerimine: kõik isikuandmed (koolitajate nimed, klientide nimed jm tuvastamist võimaldav info) on andmestikust eemaldatud või asendatud unikaalsete koodidega (nt "Koolitaja 14").
 
-Töötlemise eesmärk: Andmeid töödeldakse üksnes õppe- ja analüütilisel eesmärgil, et selgitada välja koolitusvaldkondade tulusus ja lektorite ajakasutuse efektiivsus.
+Töötlemise eesmärk: Andmeid töödeldakse üksnes õppe- ja analüütilisel eesmärgil.
 
 ## Andmed
 
@@ -47,6 +37,10 @@ Töötlemise eesmärk: Andmeid töödeldakse üksnes õppe- ja analüütilisel e
 | Koolituse kategooria      	| Koolituste jagunemist iseloomustav lühend (SPE, KAS, PRO, DEV jne)                                                            	|
 | Koolitaja kategooria      	| Oma koolitaja (koolitusettevõtte põhikohaga töötaja) või külaliskoolitaja(lepinguline partner)                                	|
 | Koolitustundide osakaal   	| Koolitustundide osakaal kogu tundidest (ettevalmistus + koolitus)                                                             	|
+| KAS                        	| Kasutajakoolitused                                                                                                             	|
+| PRO                        	| Suured projektid                                                                                                               	|
+| SPE                        	| Spetsialistikoolitused                                                                                                        	|
+| DEV                       	| Juhikoolitused                                                                                                                 	|
 
 ### Andmesõnastik
 
@@ -65,11 +59,9 @@ Töötlemise eesmärk: Andmeid töödeldakse üksnes õppe- ja analüütilisel e
 | Koolitustundide osakaal   	| Koolitustundide osakaal kogu tundidest (ettevalmistus + koolitus)                                                             	|
 
 ### Andmeallikad
-Analüüs põhineb viiel andmestikul, mis eksporditi ettevõtte infosüsteemidest (leitavad lingilt: https://github.com/siiriliis/Koolituste-kasumlikkuse-m-jutegurid/tree/main/algandmed):
+Analüüs põhineb neljal andmetabelil, mis eksporditi ettevõtte infosüsteemidest (leitavad lingilt: https://github.com/siiriliis/Koolituste-kasumlikkuse-m-jutegurid/tree/main/algandmed):
 
 koolitused.xlsx – Koolituste põhiandmed (CRM). 
-
-EA.xlsx – Raamatupidamise üldkanded (ERP). 
 
 EAT.xlsx – Raamatupidamise detailsed tehingud ja arved (ERP).
 
@@ -77,7 +69,7 @@ kulud või tulud.xlsx – Finantskannete klassifikaator (Excel).
 
 Töö ja koolitustunnid.xlsx – Koolitajate tööaja logid (Outlook kalender).
 
-### Andmemudel - tee pildiks
+### Andmemudel 
 Andmemudel järgib täht-skeemi (Star Schema) loogikat:
 
 Faktitabelid: koolitused, Töö ja koolitustunnid ja EAT hoiavad arvulisi andmeid.
@@ -90,13 +82,12 @@ Seosed: Kõik peamised filtrid (aeg, kategooria, lektor) liiguvad dimensioonitab
 
 
 
-### Andmevoog - tee pildiks
+### Andmevoog 
 
 <img width="321" height="301" alt="data lineage drawio" src="https://github.com/user-attachments/assets/bc4865f5-839e-4b89-b779-ffd0f474d0b2" />
 
 
-## Analüüs
-### Andmete puhastamine ja rikastamine
+## Andmete puhastamine ja rikastamine
 Andmete usaldusväärsuse tagamiseks viidi läbi järgmised puhastusprotsessid:
 
 - Tühjade väärtuste eemaldamine: Välistasime andmestikust koolitused, mille müügitulu (Käive kokku) oli 0 või puudus (blank).
@@ -113,11 +104,14 @@ Arvutuslikud väljad:
 
 Kuna algandmed ei sisaldanud otsest infot allahindluste kohta, lõime mudelisse arvutuslikud väljad Allahindlus ja Allahindlus %. See võimaldab analüüsida, kas suurem allahindlus toob kaasa suurema osalejate arvu ja kuidas see mõjutab lõppkokkuvõttes koolituse tunni tootlikkust.
 
-### Andmete eksploratiivne analüüs
+## Andmete eksploratiivne analüüs
 
-### Andmete statistiline analüüs
+## Andmete statistiline analüüs
 
-Andmete statistilise analüüsi käigus arvutasime välja keskmise müügitulu 1 AK tunni kohta, et võrrelda erinevate koolituskategooriate tulusust
+Andmete statistilise analüüsi käigus arvutasime välja keskmise müügitulu 1 AK tunni kohta, et võrrelda erinevate koolituskategooriate tulusust.
+
 
 
 ## Andmelugu, järeldused
+Regressioonianalüüsist selgus, et kohamaksumus ega allahindlus ei mõjuta osalejate arvu. 
+Sisekoolituse müügitulu AK/h kohta on suurem kui avalikel koolitustel. Kategooriates on AK/h müügitulu kõige suurem kategoorias DEV ja kõige madalam PRO.
