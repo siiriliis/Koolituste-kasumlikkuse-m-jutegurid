@@ -34,22 +34,35 @@ Töötlemise eesmärk: Andmeid töödeldakse üksnes õppe- ja analüütilisel e
 
 ### Ärisõnastik
 
-| Mõiste                  	| Selgitus                                                                                                              	|
-|-------------------------	|-----------------------------------------------------------------------------------------------------------------------	|
-| Müügitulu ak/h kohta    	| Arvutuslik väärtus: koolituse kogukäive jagatud akadeemiliste tundide arvuga.                                         	|
-| Lektori AK/h müügitulu  	| Mõõdik, mis näitab, kui palju tulu toob üks lektori töötund (sh ettevalmistus).                                       	|
-| Kobarkoolitus           	|  Koolitustüüp, mis koosneb mitmest moodulist (väli KasKobarkoolitus -True).                                           	|
-| Madalhooaeg             	| Periood mai -august                                                                                                   	|
-| Kõrghooaeg              	| Periood september - aprill                                                                                            	|
-| Koolitus                	| Õppesisu, mahu ja sihtgrupiga defineeritud toode, mida saab korduvalt erinevatele gruppidele teostada.                	|
-| Allahindlus             	| Arvutuslik vahe standardse osalustasu ja tegelikult realiseerunud müügitulu vahel.                                    	|
-| Kobarkoolitus           	| Mahukam koolitusprojekt, mis koosneb mitmest moodulist või korduvast koolitusest.                                     	|
-| Avalik koolitus         	| Kõigile soovijatele avatud koolitus, mille toimumisaeg ja sisu on eelnevalt avalikustatud                             	|
-| Sisekoolitus            	| Ettevõtte tellimusel korraldatav B2B koolitusteenuse toode, mis on kohandatud konkreetse organisatsiooni vajadustele. 	|
+| Mõiste                    	| Selgitus                                                                                                                      	|
+|---------------------------	|-------------------------------------------------------------------------------------------------------------------------------	|
+| Müügitulu AK/h kohta      	| Koolituste müügitulu jagatud koolituste akadeemiliste tundide arvuga.                                                         	|
+| Koolitaja AK/h müügitulu  	| Koolituse müügitulu jagatud koolitaja logitud töötundidega                                                                    	|
+| Madalhooaeg               	| Periood jaanuar, mai-juuli                                                                                                    	|
+| Kõrghooaeg                	| Periood august-detsember, veebruar-aprill                                                                                     	|
+| Koolitus                  	| Õppesündmus või kursus, millel on konkreetne teema, toimumisaeg ja määratud lektor.                                           	|
+| Allahindlus               	| Väärtus protsentides, algselt määratud kohamaksumuse ja tegelikult realiseerunud müügitulu suhe.                              	|
+| Koolitaja                 	| Inimene, kes viib läbi koolitust.                                                                                             	|
+| Töö kategooria            	| Koolitaja töötundide jagunemine: koolitustunnid ehk koolituse läbiviimiselele kulunud tunnid, töötunnid ehk ettevalmistusaeg. 	|
+| Koolituse kategooria      	| Koolituste jagunemist iseloomustav lühend (SPE, KAS, PRO, DEV jne)                                                            	|
+| Koolitaja kategooria      	| Oma koolitaja (koolitusettevõtte põhikohaga töötaja) või külaliskoolitaja(lepinguline partner)                                	|
+| Koolitustundide osakaal   	| Koolitustundide osakaal kogu tundidest (ettevalmistus + koolitus)                                                             	|
 
 ### Andmesõnastik
-Andmesõnastik on leitav:....
-(Näide andmesõnastikust)
+
+| Mõiste                    	| Selgitus                                                                                                                      	|
+|---------------------------	|-------------------------------------------------------------------------------------------------------------------------------	|
+| Müügitulu AK/h kohta      	| Koolituste müügitulu jagatud koolituste akadeemiliste tundide arvuga.                                                         	|
+| Koolitaja AK/h müügitulu  	| Koolituse müügitulu jagatud koolitaja logitud töötundidega                                                                    	|
+| Madalhooaeg               	| Periood jaanuar, mai-juuli                                                                                                    	|
+| Kõrghooaeg                	| Periood august-detsember, veebruar-aprill                                                                                     	|
+| Koolitus                  	| Õppesündmus või kursus, millel on konkreetne teema, toimumisaeg ja määratud lektor.                                           	|
+| Allahindlus               	| Väärtus protsentides, algselt määratud kohamaksumuse ja tegelikult realiseerunud müügitulu suhe.                              	|
+| Koolitaja                 	| Inimene, kes viib läbi koolitust.                                                                                             	|
+| Töö kategooria            	| Koolitaja töötundide jagunemine: koolitustunnid ehk koolituse läbiviimiselele kulunud tunnid, töötunnid ehk ettevalmistusaeg. 	|
+| Koolituse kategooria      	| Koolituste jagunemist iseloomustav lühend (SPE, KAS, PRO, DEV jne)                                                            	|
+| Koolitaja kategooria      	| Oma koolitaja (koolitusettevõtte põhikohaga töötaja) või külaliskoolitaja(lepinguline partner)                                	|
+| Koolitustundide osakaal   	| Koolitustundide osakaal kogu tundidest (ettevalmistus + koolitus)                                                             	|
 
 ### Andmeallikad
 Analüüs põhineb viiel andmestikul, mis eksporditi ettevõtte infosüsteemidest (leitavad lingilt: https://github.com/siiriliis/Koolituste-kasumlikkuse-m-jutegurid/tree/main/algandmed):
@@ -79,7 +92,6 @@ Seosed: Kõik peamised filtrid (aeg, kategooria, lektor) liiguvad dimensioonitab
 ### Andmevoog - tee pildiks
 
 <img width="321" height="301" alt="data lineage drawio" src="https://github.com/user-attachments/assets/bc4865f5-839e-4b89-b779-ffd0f474d0b2" />
-
 
 
 ## Analüüs
