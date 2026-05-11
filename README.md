@@ -86,7 +86,8 @@ Dimensioonitabelid: Date, Kategooriad, Lektorid ja kulud või tulud on seotud fa
 
 Seosed: Kõik peamised filtrid (aeg, kategooria, lektor) liiguvad dimensioonitabelitest faktitabelitesse, võimaldades ristanalüüsi eri allikate vahel.
 
-<img width="927" height="760" alt="Data Model" src="https://github.com/user-attachments/assets/34072a20-4baf-4ad6-80e2-c80f01250437" />
+<img width="1057" height="798" alt="Screenshot 2026-05-11 150916" src="https://github.com/user-attachments/assets/8959ed6b-9f2a-4e70-8409-37b9bf304945" />
+
 
 
 ### Andmevoog - tee pildiks
