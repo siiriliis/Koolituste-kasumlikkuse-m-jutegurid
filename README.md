@@ -83,13 +83,13 @@ Andmemudel järgib täht-skeemi (Star Schema) loogikat:
 
 - Seosed: kõik peamised filtrid (aeg, kategooria, lektor) liiguvad dimensioonitabelitest faktitabelitesse, võimaldades ristanalüüsi eri allikate vahel.
 
-<img width="1057" height="798" alt="Screenshot 2026-05-11 150916" src="https://github.com/user-attachments/assets/8959ed6b-9f2a-4e70-8409-37b9bf304945" />
-
+<img width="663" height="566" alt="image" src="https://github.com/user-attachments/assets/9ac9ffbb-a75f-4d2d-8644-1a95486dbf79" />
 
 
 ### Andmevoog 
 
-<img width="321" height="301" alt="data lineage drawio" src="https://github.com/user-attachments/assets/bc4865f5-839e-4b89-b779-ffd0f474d0b2" />
+<img width="577" height="338" alt="andmevoog" src="https://github.com/user-attachments/assets/0c65d915-8148-4ad0-88ec-42dcf3cb80d7" />
+
 
 
 ## Andmete puhastamine ja rikastamine
