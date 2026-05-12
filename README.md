@@ -117,7 +117,7 @@ Andmete statistilise analüüsi käigus arvutasime välja keskmise müügitulu 1
 
 
 
-## Andmelugu, järeldused
+## Järeldused
 Regressioonianalüüsis selgus, et kohamaksumusel puudub mõju osalejate arvule. Samuti ilmnes mõju puudumine ka allahindluste korral. Ehk koolitaja võiks kaaluda vähemate soodustuste tegemist.
 
 Koolituse tüüpidest, osutus müügitulu AK/h kohta kõige kõrgemaks sisekoolitustel. Ehk koolitaja võiks suunata oma ressursse seda tüüpi koolituste arvu kasvatamisele.
