@@ -119,9 +119,14 @@ Andmete statistilise analüüsi käigus arvutasime välja keskmise müügitulu 1
 
 ## Andmelugu, järeldused
 Regressioonianalüüsis selgus, et kohamaksumusel puudub mõju osalejate arvule. Samuti ilmnes mõju puudumine ka allahindluste korral. Ehk koolitaja võiks kaaluda vähemate soodustuste tegemist.
+
 Koolituse tüüpidest, osutus müügitulu AK/h kohta kõige kõrgemaks sisekoolitustel. Ehk koolitaja võiks suunata oma ressursse seda tüüpi koolituste arvu kasvatamisele.
+
 Kategooriate lõikes osutus (müügitulu AK/h kohta[Õ1.1]) kõige tulusamaks juhikoolitused ehk DEV kategooria, mida mõjutas positiivselt väiksem allahindluse protsent ja väiksem koolituse maht, näiteks võrrelduna spetsialistide koolitustega ehk SPE kategooriaga. Koolituste mahus ei saa kvaliteedi pärast tõenäoliselt mööndusi teha, aga võiks taaskord mõelda vähemate allahindluste tegemisele SPE-, eriti KAS kategoorias, kus keskmine allahindluse protsent tundub olema kõrge (33%).
+
 Kõige vähem tulusamaks osutus projektide (PRO) kategooria, mille kõrge koolituse maht kahandab selle müügitulu. Siin tasuks mõelda võib-olla iseseisva õppe rakendamisele mingile osale teadmiste omandamisest, mida kontrollitakse näiteks testidega või mõnel muul viisil, ja kasutada koolitajaid rohkem kvaliteetse praktilise osa läbiviimisel ja juhendamisel.
+
 Hooajalisust uurides ilmnes DEV kategoorias oluline erinevus keskmise müügitulu AK/h kohta, mida võib huvi korral koolitusettevõte edasi uurida.
+
 Koolitajate töö- ja koolitustundidest joonistus välja suur muutus „Koolitaja 8“ müügitulu AK/h kohta aastate 2024 ja 2025 võrdluses. Uurides koolitustundide osakaalu kogu tundidesse, ilmnes samuti suur erinevus koolitajate ettevalmistustöödele kulutatud ajas. Kas need muutused ja erinevused tulenevad tööaegade täitmise harjumustest või millestki muust, võib huvi korral koolitusettevõte edasi uurida.
 
