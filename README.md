@@ -1,4 +1,4 @@
-# BCS Koolituse müügitulu analüüs
+# Koolitusettevõtte müügitulu analüüs
 
 ## Ettevõtte  ja probleemi tutvustus
 Ettevõte pakub digioskuste koolitusi (nii avalikke kui ka grupikoolitusi ettevõtetele ja asutustele), mis on jaotatud sihtgrupipõhistesse kategooriatesse. Koolitusi viivad läbi nii ettevõtte enda palgal olevad koolitajad kui ka külaliskoolitajad.
@@ -43,25 +43,25 @@ Töötlemise eesmärk: Andmeid töödeldakse üksnes õppe- ja analüütilisel e
 
 ### Andmesõnastik
 
-| Tabel                 	| Allika veeru nimi 	| Lõplik veeru nimi  	| Tüüp           	| Kirjeldus                                                                                    	|   	|
-|-----------------------	|-------------------	|--------------------	|----------------	|----------------------------------------------------------------------------------------------	|---	|
-| kulud või tulud       	| kulud_tulud_id    	| kulud_tulud_id     	| VARCHAR(100)   	| Kulu/Tulu alamliigi unikaalne ID                                                             	|   	|
-| kulud või tulud       	| kulud_tulud_2     	| kulud_tulud_2      	| VARCHAR(100)   	| Kulude/tulude alamliikideks jagamine                                                         	|   	|
-| kulud või tulud       	| kulud_tulud_1     	| kulud_tulud_1      	| VARCHAR(100)   	| Kategoriseerimine kuludeks/tuludeks                                                          	|   	|
-| Töö ja koolitustunnid 	| Lektor            	| Koolitaja          	| VARCHAR(100)   	| Koolitaja anonüümne kood (tekst + nr)                                                        	|   	|
-| Töö ja koolitustunnid 	| Start             	| Start              	| DATE           	| Koolituse alguskuupäev (PP.KK.AAAA)                                                          	|   	|
-| Töö ja koolitustunnid 	| AK tunnid         	| AK tunnid          	| DECIMAL (6, 2) 	| Logitud töötundide kestus (akadeemilistes tundides)                                          	|   	|
-| koolitused            	| Title             	| Koolituste nimetus 	| VARCHAR(100)   	| Koolituse nimetus                                                                            	|   	|
-| koolitused            	| Koolitaja         	| Koolitaja          	| VARCHAR(20)    	| Koolitaja anonüümne kood (tekst + nr)                                                        	|   	|
-| koolitused            	| KohaMaksumus      	| Kohamaksumus       	| DECIMAL(6, 2)  	| Alghind ühele osalejale (2 komakohaga)                                                       	|   	|
-| koolitused            	| KoolituseMahtAK   	| Koolituse maht     	| DECIMAL(4, 1)  	| Koolituse maht (akadeemiliste tundidena - 45min, 1 komakohaga)                               	|   	|
-| koolitused            	| Id                	| Id                 	| INTEGER        	| Koolituse toimumise unikaalne kood                                                           	|   	|
-| koolitused            	| ContentType       	| Tüüp               	| VARCHAR(15)    	| Koolituse tüüp: "avalik", "sise"                                                             	|   	|
-| koolitused            	| Käive kokku       	| Müügitulu          	| DECIMAL(5, 0)  	| Koolituse müügitulu                                                                          	|   	|
-| koolitused            	| Osalejaid kokku   	| Osalejate arv      	| INTEGER        	| Koolituse osalejate arv kokku                                                                	|   	|
-| EAT                   	| Summa             	| Summa              	| DECIMAL(12,2)  	| Tegelikud kulud ja tulud                                                                     	|   	|
-| EAT                   	| kulud_tulud_ID    	| kulud_tulud_ID     	| VARCHAR(20)    	| Välisvõti, mis seob tehingu klassifikaatorite tabeliga                                       	|   	|
-| EAT                   	| avalik või sise   	| avalik või sise    	| VARCHAR(50)    	| Määrab, kas tehing on seotud avaliku koolituse või ettevõttetele suunatud (B2B) koolitusega. 	|   	|
+| Tabel                 	| Allika veeru nimi 	| Lõplik veeru nimi  	| Tüüp           	| Kirjeldus                                                                                    	|
+|-----------------------	|-------------------	|--------------------	|----------------	|----------------------------------------------------------------------------------------------	|
+| kulud või tulud       	| kulud_tulud_id    	| kulud_tulud_id     	| VARCHAR(100)   	| Kulu/Tulu alamliigi unikaalne ID                                                             	|
+| kulud või tulud       	| kulud_tulud_2     	| kulud_tulud_2      	| VARCHAR(100)   	| Kulude/tulude alamliikideks jagamine                                                         	|
+| kulud või tulud       	| kulud_tulud_1     	| kulud_tulud_1      	| VARCHAR(100)   	| Kategoriseerimine kuludeks/tuludeks                                                          	|
+| Töö ja koolitustunnid 	| Lektor            	| Koolitaja          	| VARCHAR(100)   	| Koolitaja anonüümne kood (tekst + nr)                                                        	|
+| Töö ja koolitustunnid 	| Start             	| Start              	| DATE           	| Koolituse alguskuupäev (PP.KK.AAAA)                                                          	|
+| Töö ja koolitustunnid 	| AK tunnid         	| AK tunnid          	| DECIMAL (6, 2) 	| Logitud töötundide kestus (akadeemilistes tundides)                                          	| 
+| koolitused            	| Title             	| Koolituste nimetus 	| VARCHAR(100)   	| Koolituse nimetus                                                                            	|
+| koolitused            	| Koolitaja         	| Koolitaja          	| VARCHAR(20)    	| Koolitaja anonüümne kood (tekst + nr)                                                        	|
+| koolitused            	| KohaMaksumus      	| Kohamaksumus       	| DECIMAL(6, 2)  	| Alghind ühele osalejale (2 komakohaga)                                                       	|
+| koolitused            	| KoolituseMahtAK   	| Koolituse maht     	| DECIMAL(4, 1)  	| Koolituse maht (akadeemiliste tundidena - 45min, 1 komakohaga)                               	|
+| koolitused            	| Id                	| Id                 	| INTEGER        	| Koolituse toimumise unikaalne kood                                                           	|
+| koolitused            	| ContentType       	| Tüüp               	| VARCHAR(15)    	| Koolituse tüüp: "avalik", "sise"                                                             	|
+| koolitused            	| Käive kokku       	| Müügitulu          	| DECIMAL(5, 0)  	| Koolituse müügitulu                                                                          	|
+| koolitused            	| Osalejaid kokku   	| Osalejate arv      	| INTEGER        	| Koolituse osalejate arv kokku                                                                	|
+| EAT                   	| Summa             	| Summa              	| DECIMAL(12,2)  	| Tegelikud kulud ja tulud                                                                     	|
+| EAT                   	| kulud_tulud_ID    	| kulud_tulud_ID     	| VARCHAR(20)    	| Välisvõti, mis seob tehingu klassifikaatorite tabeliga                                       	|
+| EAT                   	| avalik või sise   	| avalik või sise    	| VARCHAR(50)    	| Määrab, kas tehing on seotud avaliku koolituse või ettevõttetele suunatud (B2B) koolitusega. 	|
 
 ### Andmeallikad
 Analüüs põhineb neljal andmetabelil, mis eksporditi ettevõtte infosüsteemidest (leitavad lingilt: https://github.com/siiriliis/Koolituste-kasumlikkuse-m-jutegurid/tree/main/algandmed):
@@ -126,9 +126,13 @@ Ilmnesid järgmised mustrid:
 ## Andmete statistiline analüüs
 
 Statistilise analüüsi eesmärk oli kontrollida, kas eksploratiivses analüüsis tuvastatud mustrid on statistiliselt usaldusväärsed. 
+
 Kasutasime lineaarset regressiooni (OLS).
+
 Regressioonanalüüs näitas, et kohamaksumus ei mõjuta statistiliselt oluliselt osalejate arvu üheski kategoorias ega aastas. 
+
 Samuti analüüsisime kohamaksumuse ja koolituse mahu vahelist seost — pikematel koolitustel on kõrgem alghind osalejale, eriti SPE kategoorias. 
+
 Allahindluse ja osalejate arvu vaheline regressioon näitas, et allahindlus ei mõjuta osalejate arvu — suurem allahindlus ei too rohkem osalejaid.
 
 
