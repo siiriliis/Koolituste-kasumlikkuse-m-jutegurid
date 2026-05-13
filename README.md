@@ -155,7 +155,7 @@ Allahindluse ja osalejate arvu vaheline regressioon näitas, et allahindlus ei m
 
 - Vähenda allahindlusi, eriti KAS kategoorias (hetkel keskmine 33%)
 - Kasvatada B2B ehk sisekoolitusel põhinevat müüki (kõrgem AK/h hind)
-- Kui on soov ühtlustada tulude ühtlustamist aasta lõikes, tuleks mõelda madalhooaja tulude kasvatamisele
+- Kui on soov ühtlustada tulusid aasta lõikes, tuleks mõelda madalhooaja tulude kasvatamisele
 - Koolitajate efektiivsuse ülevaatus - vaadata üle, kas koolitajad logivad ettevalmistustunde korrektselt - praegused erinevused koolitustundide osakaalus võivad osaliselt peegeldada logimisharjumuste erinevusi, mitte tegelikku tööaja jaotust. 
 
 
