@@ -132,11 +132,7 @@ Ilmnesid järgmised mustrid:
 
 ## Andmete statistiline analüüs
 
-Statistilise analüüsi eesmärk oli kontrollida, kas eksploratiivses analüüsis tuvastatud mustrid on statistiliselt usaldusväärsed. 
-
-Regressioonanalüüs näitas, et kohamaksumus ei mõjuta statistiliselt oluliselt osalejate arvu üheski kategoorias ega aastas. 
-
-Samuti analüüsisime kohamaksumuse ja koolituse mahu vahelist seost — pikematel koolitustel on kõrgem alghind osalejale, eriti SPE kategoorias. 
+Teostasime regressioonianalüüsi, et vaadelda kohamaksumuse ja allahindluse mõju osalejate arvule ning selgus, et kohamaksumus ei mõjuta statistiliselt oluliselt osalejate arvu üheski kategoorias ega aastas. 
 
 Allahindluse ja osalejate arvu vaheline regressioon näitas, et allahindlus ei mõjuta osalejate arvu — suurem allahindlus ei too rohkem osalejaid.
 
