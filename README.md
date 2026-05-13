@@ -40,6 +40,8 @@ Töötlemise eesmärk: Andmeid töödeldakse üksnes õppe- ja analüütilisel e
 | PRO                        	| Suured projektid                                                                                                               	|
 | SPE                        	| Spetsialistikoolitused                                                                                                        	|
 | DEV                       	| Juhikoolitused                                                                                                                 	|
+| Sise                       	| Ettevõtetele ja riigiasutustele mõeldud sisekoolitused                                                                         	|
+| Avalik                     	| Kõigile huvilistile suunatud koolitused                                                                                        	|
 
 ### Andmesõnastik
 
@@ -83,29 +85,34 @@ Andmemudel järgib täht-skeemi (Star Schema) loogikat:
 
 - Seosed: kõik peamised filtrid (aeg, kategooria, lektor) liiguvad dimensioonitabelitest faktitabelitesse, võimaldades ristanalüüsi eri allikate vahel.
 
-<img width="663" height="566" alt="image" src="https://github.com/user-attachments/assets/9ac9ffbb-a75f-4d2d-8644-1a95486dbf79" />
+<img width="853" height="763" alt="andmemudel" src="https://github.com/user-attachments/assets/6a6d192f-5ef6-4788-ae4d-b3d2c1f788c8" />
+
 
 
 ### Andmevoog 
 
-<img width="577" height="338" alt="andmevoog" src="https://github.com/user-attachments/assets/0c65d915-8148-4ad0-88ec-42dcf3cb80d7" />
+<img width="820" height="543" alt="andmevoog" src="https://github.com/user-attachments/assets/528ad3ef-d7b2-46b2-a823-1b9b32390e00" />
+
 
 
 ### Andmete puhastamine ja rikastamine
 Andmete usaldusväärsuse tagamiseks viidi läbi järgmised puhastusprotsessid:
-Eemaldasime: 
-- müügitulu (Käive kokku) = 0 või tühi
-- koolitusemaht ≤ 0
 
 Analüüsitud periood 01.01.2024- 31.03.2026
 - Andmed algavad 2024. aastast, et tagada võrreldavus koolitused tabeliga.
 - Andmed seisuga 01.04.2026 ja hiljem eemaldati, kuna tegemist oli tulevikuprognooside, mitte realiseerunud tehingutega.
 
+Eemaldasime: 
+- müügitulu (Käive kokku) = 0 või tühi
+- kategooria AZZ andmed, va töötundide vaates
+- koolitusemaht = 0
+- koolitajate testread
+
 Projektide filtreerimine: 
 - Analüüsist jäeti välja projekt "AZZ". Kuna see sisaldas koondandmeid üldkulude ja -tulude kohta, mida ei saanud jagada konkreetsete koolituste vahel, oleks selle kaasamine moonutanud üksikute koolitusprojektide tulususe näitajaid.
 
 Arvutuslikud väljad: 
-- Allahindlus ja Allahindlus %
+- Allahindlus %
 - Kulud, tulud, kasum
 - Müügitulu 1 osaleja kohta / Keskmine müügitulu 1 osaleja kohta (Avalik)
 - Müügitulu AK/h kohta / Keskmine müügitulu AK/h kohta
@@ -127,8 +134,6 @@ Ilmnesid järgmised mustrid:
 
 Statistilise analüüsi eesmärk oli kontrollida, kas eksploratiivses analüüsis tuvastatud mustrid on statistiliselt usaldusväärsed. 
 
-Kasutasime lineaarset regressiooni (OLS).
-
 Regressioonanalüüs näitas, et kohamaksumus ei mõjuta statistiliselt oluliselt osalejate arvu üheski kategoorias ega aastas. 
 
 Samuti analüüsisime kohamaksumuse ja koolituse mahu vahelist seost — pikematel koolitustel on kõrgem alghind osalejale, eriti SPE kategoorias. 
@@ -140,8 +145,7 @@ Allahindluse ja osalejate arvu vaheline regressioon näitas, et allahindlus ei m
 
 - Regressioonianalüüsis selgus, et kohamaksumusel puudub mõju osalejate arvule. Samuti ilmnes mõju puudumine ka allahindluste korral.
 - Koolituse tüüpidest, osutus müügitulu AK/h kohta kõige kõrgemaks sisekoolitustel. 
-- Kategooriate lõikes osutus (müügitulu AK/h kohta) kõige tulusamaks juhikoolitused ehk DEV kategooria, mida mõjutas positiivselt väiksem allahindluse protsent ja väiksem koolituse maht,
-- Kõige vähem tulusamaks osutus projektide (PRO) kategooria, mille kõrge koolituse maht kahandab selle müügitulu. 
+- Kategooriate lõikes osutusid (müügitulu AK/h kohta) kõige tulusamaks juhikoolitused ehk DEV kategooria ja vähim tulusamaks projektid ehk PRO kategooria 
 - Hooajalisuse analüüs näitas erinevust keskmise müügitulu AK/h kohta kõrg- ja madalhooaja vahel DEV kategoorias — seda tasub ettevõttel edasi uurida. 
 - Koolitajate vahel esineb suur varieeruvus müügitulus AK/h kohta — kõrgeim ja madalaim erinevad kümnekordselt.
 - Koolitajad, kellel on suurem koolitustundide osakaal kogu logitud tööajast, toodavad üldjuhul kõrgemat müügitulu AK/h kohta.
@@ -151,8 +155,7 @@ Allahindluse ja osalejate arvu vaheline regressioon näitas, et allahindlus ei m
 
 - Vähenda allahindlusi, eriti KAS kategoorias (hetkel keskmine 33%)
 - Kasvatada B2B ehk sisekoolitusel põhinevat müüki (kõrgem AK/h hind)
-- Kõrghooaja mahtude maksimeerimine
-- PRO kategoorias kaaluda iseseisva õppe lisamist - kõrge koolitusmaht kahandab tunnihinda. Teoreetilise osa asendamine iseseisva õppega vabastab koolitaja aja praktiliseks tööks.
-- Koolitajate efektiivsuse ülevaatus -vaadata üle, kas koolitajad logivad ettevalmistustunde korrektselt - praegused erinevused koolitustundide osakaalus võivad osaliselt peegeldada logimisharjumuste erinevusi, mitte tegelikku tööaja jaotust. 
+- Kui on soov ühtlustada tulude ühtlustamist aasta lõikes, tuleks mõelda madalhooaja tulude kasvatamisele
+- Koolitajate efektiivsuse ülevaatus - vaadata üle, kas koolitajad logivad ettevalmistustunde korrektselt - praegused erinevused koolitustundide osakaalus võivad osaliselt peegeldada logimisharjumuste erinevusi, mitte tegelikku tööaja jaotust. 
 
 
